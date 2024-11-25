@@ -1,0 +1,85 @@
+/* Estils generals */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #e8e8e8;
+  }
+  
+  /* Encapçalat futurista */
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ff6f61, #ff6f91, #ff6fc1);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 1.8em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    text-transform: uppercase;
+  }
+  
+  /* Contenidor principal */
+  .container {
+    display: flex;
+    margin-top: 80px; /* Espai per al header fix */
+  }
+  
+  /* Menú lateral sticky */
+  .sidebar {
+    position: sticky;
+    top: 80px; /* Espai respecte a l'encapçalat */
+    width: 250px;
+    background: #1c1c1e;
+    padding: 20px;
+    height: 100%;
+    border-right: 2px solid #ff6f61;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 20px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: #ff6f91;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+  }
+  
+  .sidebar a:hover {
+    color: #ff6fc1;
+  }
+  
+  /* Contingut principal */
+  .content {
+    flex: 1;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .content h2 {
+    color: #ff6f61;
+    margin-top: 0;
+    font-size: 2em;
+  }
+  
+  .content p {
+    line-height: 1.8;
+    margin: 20px 0;
+    font-size: 1.1em;
+  }
+  
