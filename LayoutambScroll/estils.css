@@ -1,49 +1,82 @@
 /* Estils generals */
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     margin: 0;
-    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
   }
   
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+  /* Contenidor del xat */
+  .chat-container {
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Capçalera del xat */
+  .chat-header {
     background-color: #007bff;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    z-index: 10;
+    padding: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-radius: 10px 10px 0 0;
   }
   
-  .container {
-    display: flex;
-    margin-top: 60px; /* Dona espai per al header fix */
-  }
-  
-  .sidebar {
-    position: sticky;
-    top: 60px;
-    width: 200px;
-    background-color: #f4f4f9;
-    padding: 20px;
-    height: 100vh;
-    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  .content {
+  /* Contingut del xat */
+  .chat-content {
     flex: 1;
-    padding: 20px;
+    overflow-y: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
   }
   
-  .content h1 {
-    margin-top: 0;
+  /* Missatge del xat */
+  .message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 0.9em;
   }
   
-  .content p {
-    margin: 10px 0;
-    line-height: 1.6;
+  /* Peu del xat */
+  .chat-footer {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-footer input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .chat-footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .chat-footer button:hover {
+    background-color: #0056b3;
   }
   
