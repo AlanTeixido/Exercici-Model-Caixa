@@ -1,0 +1,49 @@
+/* Estils generals */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+  }
+  
+  .container {
+    display: flex;
+    margin-top: 60px; /* Dona espai per al header fix */
+  }
+  
+  .sidebar {
+    position: sticky;
+    top: 60px;
+    width: 200px;
+    background-color: #f4f4f9;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .content h1 {
+    margin-top: 0;
+  }
+  
+  .content p {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+  
