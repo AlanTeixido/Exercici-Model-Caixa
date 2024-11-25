@@ -1,0 +1,65 @@
+/* Estils generals */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Targeta del perfil */
+  .profile-card {
+    width: 350px;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #ffffff;
+    border: 1px solid #007bff;
+    border-radius: 15px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Imatge de perfil */
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #007bff;
+  }
+  
+  /* Informació del perfil */
+  .profile-info h2 {
+    font-size: 1.8em;
+    color: #00d1ff;
+    margin: 10px 0;
+  }
+  
+  .profile-info p {
+    font-size: 1em;
+    margin: 15px 0;
+    line-height: 1.6;
+    color: #e0e0e0;
+  }
+  
+  /* Botó */
+  .profile-info button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .profile-info button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
